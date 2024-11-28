@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidebar{
+    width: 330px;
+    background:black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+}
+
+.sidebar-nav ,.sidebar2{
+    background-color:#131313;
+    border-radius: 10px;
+    padding: 20px 10px;
+    margin-bottom: 10px;
+}
+
+
+.sidebar-nav .logo img{
+    width: 40%;
+    font-size: 1px;
+
+}
+
+.sidebar-nav ul , .sidebar2 ul{
+    list-style: none;
+}
+
+.sidebar-nav ul li , .sidebar2 ul li{
+    padding: 10px 20px;
+}
+.sidebar-nav ul li a , .sidebar2 ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 16px;
+    font-weight: 600;
+}
+.sidebar-nav ul li i , .sidebar2 ul li i{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 10px;
+}
+.sidebar-nav ul li :hover , .sidebar2 ul li :hover{
+    color: #fff;
+}
+.sidebar .sidebar2 .scroll .playlist button:hover{
+    font-weight: 700;
+    background-color: black;
+}
+
+
+ .sidebar2 ul .library::after{
+    content: '+';
+    float: right;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 21px;
+    color: #b3b3b3;
+ }
+
+ .playlist{
+    background-color: #2b2a2a;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    
+ }
+
+ .scroll{
+    height: 170px;
+    overflow-y: auto;
+ }
+
+ .scroll::-webkit-scrollbar{
+    background-color: transparent;
+ }
+
+ .scroll::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 70px;
+ }
+
+ .scroll:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(113, 111, 111);
+    width: 1px;
+ }
+
+ .playlist h4 {
+    color: #fff;
+    font-size: 16px;
+ }
+
+ .playlist p{
+   color:white;
+   margin: 12px 0;
+   font-size: 12px;
+   font-weight: 300;
+ }
+
+ .playlist button{
+    padding: 8px 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-weight:600;
+    margin-bottom: 10px;
+    margin-top: 5px;
+ }
+
+ .privacy ul li a{
+    text-decoration: none;
+    color: #8b7f7f;
+    font-size: 12px;
+    font-weight: 600;
+    margin: 2px 5px;
+
+ }
+
+ .privacy ul li a:hover{
+    text-decoration:underline;
+    color: aliceblue;
+ }
+    
+
+
+ .privacy ul{
+    list-style:none ;
+    margin-top: 10px;
+}
+
+.Lang{
+    padding: 0 30px;
+    height: 101px;
+    position: relative;
+    left: -10px;
+    
+    
+}
+.Lang button{
+    background-color: transparent;
+    border: 0;
+    border: 1px solid rgb(179, 177, 177);
+    outline: none;
+    border-radius: 20px;
+    padding:10px 30px;
+    margin: 50px 0;
+   
+    
+}
+
+.Lang button a{
+    text-decoration: none; 
+    color: white;
+    padding-left: 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.Lang button i{
+    color: white;
+    font-size: 14px;
+}
+
+.Lang button:hover{
+   border: 2px solid white;
+   padding:11px 31px;
+
+}
+
+.main{
+    margin-left: 300px;
+    background-color: #0b0b0b;
+    height: 100vh;
+    overflow-y: auto;
+    margin-bottom: 90px;
+    
+}
+.main::-webkit-scrollbar{
+    background-color: transparent;
+ }
+
+ .main::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    width: 70px;
+ }
+
+ .main:hover::-webkit-scrollbar-thumb{
+    background-color: rgb(113, 111, 111);
+    width: 1px;
+ }
+
+.main .top{
+    padding: 20px 30px;
+    background-color: #141313;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    
+}
+
+.main .top .preview button {
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size:23px;
+    padding-left: 26px;
+    color: #b3b3b3;
+
+}
+
+.main .top  .login button {
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    border: 0;
+    outline: 0;
+    font-size:20px;
+    padding-left: 13px;
+    text-decoration: none;
+   
+}
+
+.main .top  .login a{
+    text-decoration: none;
+    color: black;
+}
+
+.main .top .login .li{
+    border-radius: 20px;
+    background-color: white;
+    padding: 10px 15px;
+    font-weight: 450;
+}
+
+.main .top .login .su{
+    color: #b3b3b3;
+    font-weight: 450;
+    padding-right: 10px;
+}
+
+.main .top .preview button:hover{
+    color: white;
+    font-weight: 700;
+}
+
+.main .top .login .li:hover{
+    font-weight: 650;
+}
+
+.main .top .login .su:hover{
+    color: white;
+    font-weight: 650;
+}    
+
+.main .bottom{
+    padding: 30px 40px;
+    
+    
+}
+
+.main .bottom h2{
+    color:white ;
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+
+.main .bottom .card{
+    display: flex;
+    gap: 20px;
+    overflow: hidden;
+}
+
+.main .bottom .card .items{
+    width: 180px;
+    min-width: 170px;
+    background-color: #171717;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.main .bottom .card .items:hover{
+  background-color: #2f2d2d;
+    
+}
+.main .bottom .card .items img{
+    width: 100%;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.main .bottom .items h4{
+    color: white;
+}
+
+.main .bottom .items p{
+    color: rgb(163, 159, 159);
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.main .bottom .items p:hover{
+   text-decoration: underline;
+}
+
+.main .bottom .playbutton{
+    position: relative;
+}
+
+.main .bottom .playbutton i{
+    position: absolute;
+    background-color: rgb(6, 117, 6);
+    border-radius: 50%;
+    padding: 14px;
+    right: 8px;
+    top: -40px;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.main .bottom .card .items:hover .playbutton i{
+    opacity:1 ;
+    transform: translateY(-20px);
+}
+
+.footercontent{
+    padding: 20px 40px;
+}
+
+
+.footercontent .footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footercontent .footer .footerlink{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+.footercontent .footer .footerlink .footercolumn{
+    margin: 0 12px;
+}
+.footercontent .footer .footerlink  h3{
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.footercontent .footer .footerlink ul li{
+    list-style: none;
+    margin: 6px 0;
+    
+}
+.main .footercontent .footer .footerlink ul li a{
+    text-decoration: none;
+    color: #b3b3b3;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.main .footercontent .footer .footerlink  ul li a:hover{
+    color: aliceblue;
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+.footer .sociallinks i{
+    color: #fff;
+    background-color: #171717;
+    padding: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 5px;
+}
+.footer .sociallinks i:hover{
+    font-weight: 700;
+    background-color: #1f1f1f;
+}
+hr{
+    margin: 20px 40px;
+    border:0;
+    outline: 0;
+    border: 1px solid #8b7f7f;
+    margin-top: 40px;
+}
+
+.main .copy {
+    padding: 0 40px;
+    color: #b3b3b3;
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+.main .pre-view{
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to right,#6A994E,#BC4749);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right:0;
+    padding: 15px 40px;
+}
+
+.main .pre-view h5{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: whitesmoke;
+}
+.main .pre-view p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.main .pre-view button{
+    background:whitesmoke;
+    padding:10px 30px;
+    border: 0;
+    outline: 0;
+    border-radius: 20px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #0b0b0b;
+}
+
+.main .pre-view button:hover{
+    background-color:#004b23;
+    color: aliceblue;
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
